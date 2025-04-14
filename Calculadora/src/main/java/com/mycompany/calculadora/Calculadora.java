@@ -4,13 +4,15 @@
 
 package com.mycompany.calculadora;
 
-/**
- *
- * @author 08199
- */
-public class Calculadora {
+public class Calculadora extends javax.swing.JFrame {
+
+    public Calculadora() {
+        // Não é necessário inicializar nada aqui
+    }
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        java.awt.EventQueue.invokeLater(() -> {
+            new Interface().setVisible(true); // Abre a interface da calculadora
+        });
     }
 }
